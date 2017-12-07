@@ -1,8 +1,7 @@
 
 
 install:
-all:
-	sudo p -r .vim .vimrc .inpurc .bashrc ~/
+	sudo cp -r .vim .vimrc .inputrc .bashrc ~/
 
 update:
 	sudo cp -r ~/.vim ~/.vimrc ~/.inputrc ~/.bashrc .
