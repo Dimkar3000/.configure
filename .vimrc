@@ -31,4 +31,14 @@ map <C-L> <C-W>j<C-W>
 
 execute pathogen#infect()
 
-map <C-]> mzgg=G`z
+map  <F2>  <Esc>mzgg=G`z
+map  <F2>  <Esc>mzgg=G`z
+imap <C-]> <Esc>mzgg=G`z
+imap <C-]> <Esc>mzgg=G`z
+
+map  <F1>  <Esc>:wq<CR>
+imap <F1>  <Esc>:wq<CR>
+map  <C-s> <Esc>:wq<CR>
+imap <C-s> <Esc>:wq<CR>
+
+map <F3> <Esc>:%s/#\[ignore\]//gc<CR>

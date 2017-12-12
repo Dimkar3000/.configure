@@ -119,3 +119,5 @@ fi
 cw(){
         cd $(echo "${1%/}" | sed -r  -e 's|^A:|/mnt/a|'  -e 's|^B:|/mnt/b|'  -e 's|^C:|/mnt/c|'  -e 's|^D:|/mnt/d|'  -e 's|^E:|/mnt/E|'  -e 's|^F:|/mnt/f|'  -e 's|^G:|/mnt/g|'  -e 's|^H:|/mnt/h|'  -e 's|^I:|/mnt/i|'  -e 's|^K:|/mnt/k|'  -e 's|^L:|/mnt/l|' -e 's|^M:|/mnt/m|' -e 's|^N:|/mnt/n|' -e 's|^O:|/mnt/o|'  -e 's|^P:|/mnt/p|'  -e 's|^Q:|/mnt/q|'  -e 's|^R:|/mnt/r|'  -e 's|^S:|/mnt/s|'  -e 's|^T:|/mnt/t|'  -e 's|^U:|/mnt/u|'  -e 's|^V:|/mnt/v|'  -e 's|^W:|/mnt/w|'  -e 's|^X:|/mnt/x|'  -e 's|^Y:|/mnt/y|'  -e 's|^Z:|/mnt/z|' -e 's|\\|/|g');
 }
+
+cd
