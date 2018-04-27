@@ -121,3 +121,4 @@ cw(){
 }
 
 cd
+source /home/dimkar/.cargo/env
