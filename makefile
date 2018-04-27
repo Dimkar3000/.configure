@@ -6,7 +6,7 @@ install:
 	chown ${USER} ~/.vim*
 	vim +PluginInstall +qall
 update:
-	sudo cp -r ~/.vim ~/.vimrc ~/.inputrc ~/.bashrc . 
+	cp -r ~/.vim ~/.vimrc ~/.inputrc ~/.bashrc . 
 	git add -A
 	git commit -m "Automatic update"
 	git push
