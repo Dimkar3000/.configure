@@ -127,4 +127,4 @@ set +H
 
 
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u\[\033[01;97m\]@\[\033[01;34m\]\h\[\033[00;97m\]:\[\033[01;95m\]\w\[\033[00m\]\$ '
-LS_COLORS=$LS_COLORS:'di=1;35:' ; export LS_COLORS
+LS_COLORS="di=1;31" ; export LS_COLORS
