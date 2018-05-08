@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -119,6 +119,12 @@ fi
 cw(){
         cd "$(echo "$@" | sed -r  -e 's|^A:|/mnt/a|'  -e 's|^B:|/mnt/b|'  -e 's|^C:|/mnt/c|'  -e 's|^D:|/mnt/d|'  -e 's|^E:|/mnt/e|'  -e 's|^F:|/mnt/f|'  -e 's|^G:|/mnt/g|'  -e 's|^H:|/mnt/h|'  -e 's|^I:|/mnt/i|'  -e 's|^K:|/mnt/k|'  -e 's|^L:|/mnt/l|' -e 's|^M:|/mnt/m|' -e 's|^N:|/mnt/n|' -e 's|^O:|/mnt/o|'  -e 's|^P:|/mnt/p|'  -e 's|^Q:|/mnt/q|'  -e 's|^R:|/mnt/r|'  -e 's|^S:|/mnt/s|'  -e 's|^T:|/mnt/t|'  -e 's|^U:|/mnt/u|'  -e 's|^V:|/mnt/v|'  -e 's|^W:|/mnt/w|'  -e 's|^X:|/mnt/x|'  -e 's|^Y:|/mnt/y|' -e 's|^Z:|/mnt/z|g' -e 's|\\|/|g')";
 }
+# My config entries
 
 cd
 source /home/dimkar/.cargo/env
+set +H
+
+
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u\[\033[01;97m\]@\[\033[01;34m\]\h\[\033[00;97m\]:\[\033[01;95m\]\w\[\033[00m\]\$ '
+LS_COLORS=$LS_COLORS:'di=1;35:' ; export LS_COLORS

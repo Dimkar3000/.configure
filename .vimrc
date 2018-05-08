@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'aradunovic/perun.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
